@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 10pt;
+            margin: 0;
+            padding: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            font-family: Arial, sans-serif;
+            font-size: 12pt;
+            width: 100%;
+            align-items: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <b>the list.</b>
+    </header>
+    <ul id="list">
+        <!-- List items will be added here by JavaScript -->
+    </ul>
+
+    <script>
+        const listContent = [
+            "3u72GmiCh5ZouGVY16Xm7SakFXgMMkZGk1gir3coSWP8 1",
+            "7MyLbidYRBYMJRSYzwA8Jbaqzm9VFztibgVoK6wtWPfK 1",
+            "49G96gYpqEsU1icjoVf45yi7o4CqA33y8jFgiZUzoVx5 1",
+            "2GdTreMHkBHXess5hH2mDyo93HT9Xkt1BR9QgNFFUuW3 1",
+            "FNmhs6pXVtrKKmmrGRWhGZv7tD3Fe599AFQrAEKiv99i 1",
+            "GSbxnUWmFr99LkzLEgEMntCbdQ5gTU3GP2KEHKjAGPaf 1",
+            "BTZcCjet8V4jhDEoZcYLDMi63csrgchnHEyGUFjta2rW 1",
+            "inkDCH1VxvhMMWZkK2yUz4zWdLh8BPE8pEni461Wyy3 1",
+            "9E5Jd26eY8CtrjGPEpav515kEtKyZqxxL13Nts7njFhD 1",
+            "8TBoJHBPpBhTvZePH8aJwbU8qCMJ5gq8NCpoQSreMbM6 1",
+            "HbaweBLWEmu4fFiJfYYYtXdksovKYEeswXbLwhVLU2D8 1",
+            "FcJCYLxPhMi6eiBcRLpAgk4JnaVdM6u7cgShv1VuWWNX 1",
+            "9bWFJUrNdULnspdnCxDUEDNiMw5bYkj4Yd2iQvfa2dy1 1",
+            "GrNN6gxXR5jwVUKpDfM5ANVVC76XmstYW1jndDijsGCx 1",
+            "6YAxJhJXPjFLph6GPvsQCeScFCafPsVvx3Tjc8oS9EmK 1",
+            "BVcjwsQUwuRHhKjCmgTWDftHqh83Phg6rt97HQdJpM8C 1",
+            "3uJeoLFLPvH5L1VdKDykuMzKdFkBNQJBD9iNZMoJZNYB 1",
+            "3ySWpzQErNzVXrGMhpRHzxrVvtPw9A7LYE2icZ5U6Nqg 1"
+        ];
+        
+        const listElement = document.getElementById('list');
+        
+        listContent.forEach(item => {
+            const listItem = document.createElement('li');
+            listItem.textContent = item;
+            listElement.appendChild(listItem);
+        });
+    </script>
+    <text>
+        <i>follow @inkprojectsol for more oppurtunities to play the game.</i>
+    </text>
+</body>
+</html>
